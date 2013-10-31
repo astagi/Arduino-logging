@@ -20,6 +20,17 @@ void loop() {
     Log.Info("End of cycle "CR);
 }
 ```
+
+Read your logs using the receiver included! Install it using
+```
+# cd receiver
+# python setup.py install
+```
+and then
+```
+arduino_logging /dev/tty.usbmodem1411 9600
+```
+
 License
 -------
 This software is released under MIT License. 

@@ -1,0 +1,10 @@
+#General
+*~
+
+#Arduino
+*.o
+*.hex
+*/.dep
+*/.lib
+
+.DS_Store

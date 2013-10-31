@@ -1,4 +1,4 @@
-Arduino-Logging
+Arduino-logging
 ===============
 Logging library for Arudino
 
@@ -6,11 +6,20 @@ Usage
 -----
 ```
 #include <Logging.h>
-#define LOGLEVEL LOG_LEVEL_DEBUG
-Log.Init(LOGLEVEL, 9600L);
-Log.Info("Write some info %d %d", 1, 2);
-```
 
+#define LOGLEVEL LOG_LEVEL_DEBUG
+
+
+void setup() {
+    Log.Init(LOGLEVEL, 9600L);
+}
+
+void loop() {
+    Log.Info("My favorite output stuff in future :-)"CR);
+    //...
+    Log.Info("End of cycle "CR);
+}
+```
 License
 -------
 This software is released under MIT License. 
